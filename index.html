@@ -53,7 +53,54 @@
         .row {
           flex-direction: column;
         }
+
+        .main-h1 {
+          font-size: 20pt;
+        }
+        .main-btn {
+          font-size: 10pt;
+        }
+        .contact-box{
+          flex-direction: column;
+        }
+        .form-row {
+          flex-direction: column;
+        }
+        h1 {
+          font-size: 25pt;
+
+        }
+        h2 {
+          font-size: 12pt;
+        }
+        div {
+          font-size: 8pt;
+        }
       }
+
+    @media (min-width: 768px) {
+      .main-h1 {
+        font-size: 38pt;
+      }
+      .main-btn {
+        font-size: 18pt;
+      }
+      .contact-box{
+        flex-direction: row;
+      }
+      .form-row {
+        flex-direction: row;
+      }
+      h1 {
+        font-size: 80pt;
+      }
+      h2 {
+        font-size: 29pt;
+      }
+      div {
+        font-size: 19pt;
+      }
+    }
 
       .custom-list {
         list-style: none; /* Tắt bullet mặc định */
@@ -83,10 +130,9 @@
       style="background: rgb(31, 92, 172)"
     >
       <h1
-        class="m-0 fw-bolder"
+        class="m-0 fw-bolder main-h1"
         style="
           font-family: &quot;Bricolage Grotesque&quot;, sans-serif;
-          font-size: 45pt;
         "
       >
         SAIGON TECHNOLOGY UNIVERSITY
@@ -106,7 +152,7 @@
           <ul class="navbar-nav">
             <li class="nav-item">
               <a
-                class="nav-link fw-bold fs-4"
+                class="nav-link fw-bold"
                 style="color: rgb(31, 92, 172)"
                 href="#"
                 >Home</a
@@ -115,7 +161,7 @@
 
             <li class="nav-item">
               <a
-                class="nav-link fw-bold fs-4"
+                class="nav-link fw-bold"
                 style="color: rgb(31, 92, 172)"
                 href="#"
                 >About</a
@@ -124,7 +170,7 @@
 
             <li class="nav-item">
               <a
-                class="nav-link fw-bold fs-4"
+                class="nav-link fw-bold"
                 style="color: rgb(31, 92, 172)"
                 href="#"
                 >Contact</a
@@ -133,7 +179,7 @@
 
             <li class="nav-item dropdown">
               <a
-                class="nav-link dropdown-toggle fw-bold fs-4"
+                class="nav-link dropdown-toggle fw-bold"
                 style="color: rgb(31, 92, 172)"
                 href="#"
                 data-bs-toggle="dropdown"
@@ -174,7 +220,6 @@
             class="fw-bold mb-4 mb-md-5"
             style="
               font-family: &quot;Montserrat&quot;, sans-serif;
-              font-size: calc(1.5rem + 1.5vw);
               line-height: 1.1;
               color: #000;
             "
@@ -188,35 +233,34 @@
             <div>
               <p
                 class="fw-bold mb-1"
-                style="color: rgb(228, 51, 51); font-size: 1.2rem"
+                style="color: rgb(228, 51, 51);"
               >
                 DATES
               </p>
-              <p class="fw-bold" style="font-size: 1.1rem; color: black">
+              <p class="fw-bold" style=" color: black">
                 October, 2026
               </p>
             </div>
             <div>
               <p
                 class="fw-bold mb-1"
-                style="color: rgb(228, 51, 51); font-size: 1.2rem"
+                style="color: rgb(228, 51, 51); "
               >
                 LOCATION
               </p>
-              <p class="fw-bold" style="font-size: 1.1rem; color: black">
+              <p class="fw-bold" style=" color: black">
                 Saigon Technology University
               </p>
             </div>
           </div>
 
           <button
-            class="btn rounded-pill fw-bold mb-4 mb-md-0 text-center"
+            class="btn rounded-pill fw-bold mb-4 mb-md-0 text-center main-btn"
             style="
               background-color: #c5e8f7;
               color: rgb(31, 92, 172);
               border: none;
               padding: 12px 30px;
-              font-size: 1.75rem;
               width: 100%;
               max-width: fit-content;
             "
@@ -238,23 +282,21 @@
     <!-- CONTENT -->
     <section class="text-center py-5 w-100">
       <div class="container">
-        <p
+        <h2
           class="mb-3 fw-bold"
           style="
             color: rgb(228, 51, 51);
             font-family: &quot;Bricolage Grotesque&quot;, sans-serif;
-            font-size: 60px;
           "
         >
           Dear Scientists and Researchers
-        </p>
+        </h2>
         <div
           class="text-content"
           style="
             text-align: justify;
             color: black;
             font-family: &quot;Bricolage Grotesque&quot;, sans-serif;
-            font-size: 18pt;
           "
         >
           <p class="mb-4">
@@ -294,13 +336,13 @@
     <!-- TOPIC -->
     <div class="container-fluid d-flex flex-column justify-content-center align-items-center position-relative text-white text-center py-4" 
         style="height: auto; background-color: rgb(31, 92, 172);">
-        <h1 class="fw-bolder m-0 " 
-            style="font-family: 'Bricolage Grotesque', sans-serif; font-size: 80pt; bottom: 51%;">
+        <h1 class="fw-bolder m-0 main-h1" 
+            style="font-family: 'Bricolage Grotesque', sans-serif;  bottom: 51%;">
             TOPIC
         </h1>
-        
-        <h2 class="fw-bolder m-0" 
-            style="font-family: 'Montserrat', sans-serif; font-size: 27pt; z-index: 1;">
+
+        <h2 class="fw-bolder m-0 main-h2" 
+            style="font-family: 'Montserrat', sans-serif; z-index: 1;">
             ARTIFICIAL INTELLIGENCE, TECHNOLOGY, ENGINEERING & DESIGN
         </h2>
 
@@ -310,9 +352,9 @@
         <div class="row px-2" style="height: auto;">
             <div class="col-md-6 mb-3">
                 <div class=" d-flex flex-column justify-content-start align-items-center text-center p-4" 
-                    style="height: 100%; font-family: 'Bricolage Grotesque', sans-serif; font-size: 19pt;background: linear-gradient(360deg,rgb(188, 188, 188),rgba(255, 255, 255, 0) 70%);">
+                    style="height: 100%; font-family: 'Bricolage Grotesque', sans-serif;background: linear-gradient(360deg,rgb(188, 188, 188),rgba(255, 255, 255, 0) 70%);">
                     
-                    <h2 class="fw-bolder mb-4" style="color: rgb(228, 51, 51);font-size: 27pt;">Congress Calendar</h2>
+                    <h2 class="fw-bolder mb-4" style="color: rgb(228, 51, 51);">Congress Calendar</h2>
 
                     <ul class="list-unstyled w-100 m-0 custom-list">
                         <li class=" position-relative m-0">Abstract Submission Deadline: <span style="color: rgb(31,92,172);" class="fw-bold">October, 2026</span></li>
@@ -327,16 +369,16 @@
 
             <div class="col-md-6 mb-3">
                 <div class=" d-flex flex-column justify-content-start align-items-center text-center p-4" 
-                    style="min-height: 40rem; font-family: 'Bricolage Grotesque', sans-serif; font-size: 19pt;background: linear-gradient(180deg,rgb(188, 188, 188),rgba(255, 255, 255, 0) 70%);">
+                    style="height: auto; font-family: 'Bricolage Grotesque', sans-serif; background: linear-gradient(180deg,rgb(188, 188, 188),rgba(255, 255, 255, 0) 70%);">
                     
-                    <h2 class="fw-bolder mb-4" style="color: rgb(228, 51, 51);font-size: 27pt;">Congress Fee</h2>
+                    <h2 class="fw-bolder mb-4" style="color: rgb(228, 51, 51);">Congress Fee</h2>
                     
                     <ul class="list-unstyled w-100 custom-list">
-                        <p class="fw-bold m-0" style="color: rgb(31, 92, 172);font-size: 22pt;">Services Included in the Fee</p>
+                        <p class="fw-bold m-0" style="color: rgb(31, 92, 172);">Services Included in the Fee</p>
                         <li class="m-0">Publication of abstracts and full texts in the congress book with ISBN</li>
                         <li class="m-0">Separate participation certificate for all authors</li>
                         <li class="m-0 mb-4">Coffee break for in person participants</li>
-                        <p class="fw-bold m-0" style="color: rgb(31, 92, 172);font-size: 22pt;">Accreditation</p>
+                        <p class="fw-bold m-0" style="color: rgb(31, 92, 172);">Accreditation</p>
                         <li class="m-0">Internationally accredited</li>
                         <li class="m-0">Online participation fee is</li>
                         <p class="m-0">50 EUROS: <span style="color: rgb(31, 92, 172);">ATED@stu.edu.vn</span></p>
@@ -354,8 +396,8 @@
 
     <div style=" background: linear-gradient(360deg,rgb(188, 188, 188),rgba(255, 255, 255, 0) 30%);"
     class="container-fluid mt-4 pb-4 d-flex flex-column justify-content-center align-items-center ">
-        <h2 style="color: rgb(228, 51, 51); font-size: 27pt;" class="fw-bold mb-4">Application & Submission Steps</h2>
-        <ul class="list-unstyled d-flex flex-column justify-content-center align-items-start" style="width: 73%; font-family: 'Bricolage Grotesque', sans-serif; font-size: 19pt;">
+        <h2 style="color: rgb(228, 51, 51);" class="fw-bold mb-4">Application & Submission Steps</h2>
+        <ul class="list-unstyled d-flex flex-column justify-content-center align-items-start" style="width: 73%; font-family: 'Bricolage Grotesque', sans-serif;">
             <li>1- Submit your abstract via email to <span style="color: rgb(31, 92, 172);">ATED@stu.edu.vn</span> <span style="color: rgb(228, 51, 51);">by Octorber, 2026 as word (not pdf)</span></li>
             <li>2- Referee process <span style="color: rgb(228, 51, 51);">takes about 3 days.</span> If your abstract is accepted by referees, we send you <span style="color: rgb(228, 51, 51);">an acceptance mail within 3 days</span></li>
             <li>3- After receiving the acceptance mail make your payment vie credit card and send a copy of the payment screenshot via email to us</li>
@@ -368,14 +410,14 @@
     <!-- guide -->
     <div class="container-fluid d-flex flex-column justify-content-center align-items-center position-relative text-white text-center py-4" 
         style="height: auto; background-color: rgb(31, 92, 172);">
-        <h1 class="fw-bolder m-0 " 
-            style="font-family: 'Bricolage Grotesque', sans-serif; font-size: 80pt; bottom: 51%;">
+        <h1 class="fw-bolder m-0 main-h1" 
+            style="font-family: 'Bricolage Grotesque', sans-serif;  bottom: 51%;">
             WRITING GUIDE
         </h1>
     </div>
 
     <div class="container-fluid mt-4 d-flex flex-column justify-content-center align-items-center text-center"
-    style="font-size: 20pt;font-family: 'Bricolage Grotesque', sans-serif;">
+    style="font-family: 'Bricolage Grotesque', sans-serif;">
         <p class="mt-4 mb-4" style="width: 85%;">You must apply to the Congress by sending an abstract. Since our congress has an INTERNATIONAL character, it is obligatory to send an abstract in English. The summary evaluation process takes a maximum of 5 days. The author is informed about the result of the evaluation without delay.</p>
         
         <div class="d-flex flex-column justify-content-center align-items-center text-center mb-4" 
@@ -434,21 +476,22 @@
       <div
         class="row px-3 px-md-5 pt-0 gx-4"
       >
+      <!-- LEFT -->
         <div class="col-12 col-md-6 text-start px-3 px-md-4 pt-1 pb-3">
-          <h4
+          <h2
             class="fw-bold mb-3"
-            style="color: rgb(31, 92, 172); font-size: 38pt"
+            style="color: rgb(31, 92, 172);"
           >
             Congress Organizing Committee
-          </h4>
+          </h2>
 
-          <div class="mb-3 fs-3">
+          <div class="mb-3 ">
             <p class="mb-0">Assoc. Prof. Dr. Cao Hao Thi</p>
             <p class="mb-0">President of Saigon Technology University</p>
             <p class="fw-bold text-uppercase">HONORARY PRESIDENT</p>
           </div>
 
-          <div class="mb-3 fs-3">
+          <div class="mb-3  ">
             <p class="mb-0">Assoc. Prof. Dr. Hoang Kim Anh</p>
             <p class="mb-0">
               Vice President, Saigon Technology University, VIETNAM
@@ -456,7 +499,7 @@
             <p class="fw-bold">Chair of the Organizing Committee</p>
           </div>
 
-          <div class="mb-3 fs-3">
+          <div class="mb-3  ">
             <p class="mb-0">Dr. Hoang Trung Tien</p>
             <p class="mb-0 fw-bold">
               Head of Research & Postgraduate Studies Office,
@@ -464,7 +507,7 @@
             <p class="mb-0 fw-bold">Saigon Technology University, VIETNAM</p>
           </div>
 
-          <div class="mb-3 fs-3">
+          <div class="mb-3  ">
             <p class="mb-0">MA. Phung Ba Dong</p>
             <p class="mb-0 fw-bold">
               Vice Dean, Faculty of Design, Saigon Technology University,
@@ -472,46 +515,46 @@
             </p>
           </div>
 
-          <div class="mb-3 fs-3">
+          <div class="mb-3  ">
             <p class="mb-0">Prof. Marilena Carbone</p>
             <p class="mb-0 fw-bold">University of Rome Tor Vergata, ITALY</p>
           </div>
 
-          <div class="mb-3 fs-3">
+          <div class="mb-3  ">
             <p class="mb-0">Dr. Jamal Eldin Fadoul Mohammed IBRAHIM</p>
             <p class="mb-0 fw-bold">University of Miskolc, HUNGARY</p>
           </div>
 
-          <div class="mb-3 fs-3">
+          <div class="mb-3  ">
             <p class="mb-0">Assoc. Prof. PhD RADU Brindusa Mihaela</p>
             <p class="mb-0 fw-bold">
               Athenaeum University of Bucharest, ROMANIA
             </p>
           </div>
 
-          <div class="mb-3 fs-3">
+          <div class="mb-3  ">
             <p class="mb-0">MSc. Eng. Hasan MLINAKU. PhD</p>
             <p class="mb-0 fw-bold">VUZF Sofje Bullgari, BULGARIA</p>
           </div>
 
-          <div class="mb-3 fs-3">
+          <div class="mb-3  ">
             <p class="mb-0">Dr. Ivan Pavlovic</p>
             <p class="mb-0 fw-bold">
               Scientific Institute of Veterinary Medicine of Serbia, SERBIA
             </p>
           </div>
 
-          <div class="mb-3 fs-3">
+          <div class="mb-3  ">
             <p class="mb-0">Prof. Ass. Dr. Besnik HAJDARI</p>
             <p class="mb-0 fw-bold">"Isa Boletini" University, KOSOVO</p>
           </div>
 
-          <div class="mb-3 fs-3">
+          <div class="mb-3  ">
             <p class="mb-0">Asst. Prof. Dr. Sammiti Sukbunjhong</p>
             <p class="mb-0 fw-bold">Rangsit University, THAILAND</p>
           </div>
 
-          <div class="mb-3 fs-3">
+          <div class="mb-3  ">
             <p class="mb-0">Dr. Abdussalam Ali Ahmed</p>
             <p class="mb-0 fw-bold">Bani Waleed University, LIBYA</p>
           </div>
@@ -521,14 +564,14 @@
         <div
           class="col-12 col-md-6 text-start text-md-end px-3 px-md-4 pt-1 pb-3"
         >
-          <h4
+          <h2
             class="fw-bold mb-3"
-            style="color: rgb(31, 92, 172); font-size: 38pt"
+            style="color: rgb(31, 92, 172); "
           >
             Scientific Committee Members
-          </h4>
+          </h2>
 
-          <div class="mb-2 fs-3">
+          <div class="mb-2  ">
             <p class="mb-0">Dr. Le Duc Tuan</p>
             <p class="mb-0 fw-bold ">
               Dean, Faculty of Civil Engineering, SaiGon Technology
@@ -538,7 +581,7 @@
             </p>
           </div>
 
-          <div class="mb-2 fs-3">
+          <div class="mb-2  ">
             <p class="mb-0">Dr. Tang Van To</p>
             <p class="mb-0 fw-bold ">
               Dean, Faculty of Electrical & Electronics Engineering,
@@ -549,7 +592,7 @@
             </p>
           </div>
 
-          <div class="mb-2 fs-3">
+          <div class="mb-2  ">
             <p class="mb-0">Assoc. Prof. Dr. Do Lenh Hung Tu</p>
             <p class="mb-0 fw-bold ">
               Dean, Faculty of Design, SaiGon Technology University,
@@ -559,102 +602,182 @@
             </p>
           </div>
 
-          <div class="mb-2 fs-3">
+          <div class="mb-2  ">
             <p class="mb-0">Dr. Nguyen Thi Bich Van</p>
             <p class="mb-0 fw-bold">
               University of Architecture Hochiminh city, Vietnam
             </p>
           </div>
 
-          <div class="mb-2 fs-3">
+          <div class="mb-2  ">
             <p class="mb-0">Prof. Marilena Carbone</p>
             <p class="mb-0 fw-bold">University of Rome Tor Vergata, Italy</p>
           </div>
 
-          <div class="mb-2 fs-3">
+          <div class="mb-2  ">
             <p class="mb-0">MSc. Eng. Hasan MLINAKU. PhD</p>
             <p class="mb-0 fw-bold">VUZF Sofje Bullgari, Bulgaria</p>
           </div>
 
-          <div class="mb-2 fs-3">
+          <div class="mb-2  ">
             <p class="mb-0">Dr. Jamal Eldin Fadoul Mohammed IBRAHIM</p>
             <p class="mb-0 fw-bold">University of Miskolc, Hungary</p>
           </div>
 
-          <div class="mb-2 fs-3">
+          <div class="mb-2  ">
             <p class="mb-0">Assoc. Prof. PhD RADU Brindusa Mihaela</p>
             <p class="mb-0 fw-bold">
               Athenaeum University of Bucharest, Romania
             </p>
           </div>
 
-          <div class="mb-2 fs-3">
+          <div class="mb-2  ">
             <p class="mb-0">Dr. Ivan Pavlovic</p>
             <p class="mb-0 fw-bold">
               Scientific Institute of Veterinary Medicine of Serbia, Serbia
             </p>
           </div>
 
-          <div class="mb-2 fs-3">
+          <div class="mb-2  ">
             <p class="mb-0">Prof. Ass. Dr. Besnik HAJDARI</p>
             <p class="mb-0 fw-bold">"Isa Boletini" University, Kosovo</p>
           </div>
 
-          <div class="mb-2 fs-3">
+          <div class="mb-2  ">
             <p class="mb-0">Dr. Ananda Majumdar</p>
             <p class="mb-0 fw-bold">Alberta, Canada</p>
           </div>
 
-          <div class="mb-2 fs-3">
+          <div class="mb-2  ">
             <p class="mb-0">Prof. Dr. Saima Gulzar</p>
             <p class="mb-0 fw-bold">
               University of Management and Technology, Pakistan
             </p>
           </div>
 
-          <div class="mb-2 fs-3">
+          <div class="mb-2  ">
             <p class="mb-0">Assist. Prof. Dr. Subhashish Dey</p>
             <p class="mb-0 fw-bold">
               Seshadri Rao Gudlavalleru Engineering College, India
             </p>
           </div>
 
-          <div class="mb-2 fs-3">
+          <div class="mb-2  ">
             <p class="mb-0">Asst. Prof. Dr. Sammiti Sukbunjhong</p>
             <p class="mb-0 fw-bold">Rangsit University Thailand</p>
           </div>
 
-          <div class="mb-2 fs-3">
+          <div class="mb-2  ">
             <p class="mb-0">Dr. Abdussalam Ali Ahmed</p>
             <p class="mb-0 fw-bold">Bani Waleed University, Libya</p>
           </div>
 
-          <div class="mb-2 fs-3">
+          <div class="mb-2  ">
             <p class="mb-0">Dr. Ismail Olaniyi MURAINA</p>
             <p class="mb-0 fw-bold">
               Lagos State University of Education, Nigeria
             </p>
           </div>
 
-          <div class="mb-2 fs-3">
+          <div class="mb-2  ">
             <p class="mb-0">Dr. Moses Adeolu Agoi</p>
             <p class="mb-0 fw-bold">
               College of Information and Technology Education, Nigeria
             </p>
           </div>
 
-          <div class="mb-2 fs-3">
+          <div class="mb-2  ">
             <p class="mb-0">Dr. Favour C. Uroko</p>
             <p class="mb-0 fw-bold">University of Nigeria, Nigeria</p>
           </div>
 
-          <div class="mb-2 fs-3">
+          <div class="mb-2  ">
             <p class="mb-0">Dr. Abubakar ABDULKADIR</p>
             <p class="mb-0 fw-bold">Umaru Musa Yar'adua University, Nigeria</p>
           </div>
         </div>
       </div>
+      <h2 class="my-4 fw-bolder text-center" style="color: rgb(92, 92, 92);">Congress Contacts</h2>
     </div>
+
+
+    <!--contacts-->
+    <div style="font-family: 'Bricolage Grotesque', sans-serif; background-color: rgb(31, 92, 172); padding-bottom: 5rem;"
+    class="container-fluid d-flex flex-column justify-content-center align-items-center text-center">
+      <div style="color: white;" class="my-4">
+        <p class="m-0">E-mail: <span class="fw-bold">ATED@stu.edu.vn</span></p>
+        <p class="m-0">Phone Number: <span class="fw-bold">0367 857 557</span></p>
+        <p class="m-0">Fax: <span class="fw-bold"></span>0902 992 306</p>
+      </div>
+
+      <div style="width: 85%;"
+      class="my-5 d-flex contact-box"
+      >
+        <div style="flex: 1 0 50%; background-color: white;color: rgb(92, 92, 92);">
+          <h2 class="mt-4 fw-bolder">Contacts Us</h2>
+            <form class="mb-2" style="width: 100%; padding: 20px;display: flex; flex-direction: column; gap: 15px;"
+            action="">
+              <div class="d-flex form-row" style="gap:5px ;">
+                <div style="flex: 1 0 50%;" class="text-start d-flex flex-column">
+                  <label for="firstname" class="fw-bold">First Name *</label>
+                  <input type="text" style="border-radius: 10px;  border: 1px solid rgb(92, 92, 92);" id="firstname" name="firstname" required>
+                </div>
+                <div style="flex: 1 0 50%;" class="text-start d-flex flex-column">
+                  <label for="lastname" class="fw-bold">Last Name *</label>
+                  <input type="text" style="border-radius: 10px;  border: 1px solid rgb(92, 92, 92);" id="lastname" name="lastname" required>
+                </div>
+              </div>
+
+              <div style="flex: 1 0 50%;" class="text-start d-flex flex-column">
+                  <label for="mail" class="fw-bold">Mail *</label>
+                  <input type="mail" style="border-radius: 10px;   border: 1px solid rgb(92, 92, 92);" id="mail" name="mail" required>
+              </div>
+
+              <div style="flex: 1 0 50%; " class="text-start d-flex flex-column">
+                  <label for="message" class="fw-bold">Write a message *</label>
+                  <textarea style="resize: none; border-radius: 10px; border: 1px solid rgb(92, 92, 92); height: 12rem;" id="message" name="message" required ></textarea>
+              </div>
+
+              <div style="flex: 1 0 50%;" class="text-start d-flex flex-column">
+                  <label for="congress-name" class="fw-bold">Congress Name *</label>
+                  <input type="text" style="border-radius: 10px;   border: 1px solid rgb(92, 92, 92);" id="congress-name" name="congress-name" required>
+              </div>
+
+              <div style="display: flex; justify-content: flex-end;">
+                <button type="submit" class="fw-bold px-3" style="border-radius: 30px;color: white;background-color: rgb(24, 66, 122);   border: 1px solid rgb(92, 92, 92);">SUBMIT</button>
+              </div>
+
+            </form>
+        </div>
+
+        <div style="flex: 1 0 50%; background-color: rgb(24, 66, 122);color: white;">
+          <h2 class="mt-4 fw-bolder">General office contact</h2>
+          <div style="color: white;" class="my-4">
+            <p class="m-0">E-mail: <span class="fw-bold">info@iksadkongre.org</span></p>
+            <p class="m-0">Phone Number: <span class="fw-bold">0367 857 557</span></p>
+            <p class="m-0">Fax: <span class="fw-bold"></span>0902 992 306</p>
+          </div>
+
+          <div class="my-4">
+            <img src="images/zalo.png" alt="zalo">
+            <img src="images/facebook.png" alt="facebook">
+          </div>
+        </div>
+        
+      </div>
+
+    </div>
+
+
+    <!-- Footer -->
+    <footer class="container-fluid d-flex flex-column justify-content-center align-items-center text-center "
+    style="background-color: rgb(14, 38, 70);"
+    >
+    <p class="fw-bolder m-0 p-2" style="color: rgb(168, 166, 166);">© 2026 by IKSAD CONFERENCE PLATFORM</p>
+    </footer>
+
+
+
     <!-- JS -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
