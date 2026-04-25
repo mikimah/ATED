@@ -36,14 +36,7 @@
         padding-left: 35px !important;
         padding-right: 35px !important;
       }
-        body{
-            min-height: 100vh;
-            margin: 0;
-            display: flex;
-            flex-direction: column;
-            background-color: white;
-            box-sizing: border-box;
-        }
+
 
         @media (max-width: 769px) {
             .col-md-6 {
@@ -53,6 +46,29 @@
 
             .row {
                 flex-direction: column;
+            }
+
+            h1{
+              font-size: 25pt;
+              
+            }
+            h2{
+              font-size: 10pt;
+            }
+            div{
+              font-size: 8pt;
+            }
+        }
+
+        @media (min-width: 768px) {
+            h1 {
+                font-size: 80pt;
+            }
+            h2 {
+                font-size: 27pt;
+            }
+             div{
+              font-size: 19pt ;
             }
         }
 
@@ -295,16 +311,16 @@
       </div>
     </section>
 
-        <!-- TOPIC -->
+      <!-- TOPIC -->
     <div class="container-fluid d-flex flex-column justify-content-center align-items-center position-relative text-white text-center py-4" 
         style="height: auto; background-color: rgb(31, 92, 172);">
-        <h1 class="fw-bolder m-0 " 
-            style="font-family: 'Bricolage Grotesque', sans-serif; font-size: 80pt; bottom: 51%;">
+        <h1 class="fw-bolder m-0 main-h1" 
+            style="font-family: 'Bricolage Grotesque', sans-serif;  bottom: 51%;">
             TOPIC
         </h1>
-        
-        <h2 class="fw-bolder m-0" 
-            style="font-family: 'Montserrat', sans-serif; font-size: 27pt; z-index: 1;">
+
+        <h2 class="fw-bolder m-0 main-h2" 
+            style="font-family: 'Montserrat', sans-serif; z-index: 1;">
             ARTIFICIAL INTELLIGENCE, TECHNOLOGY, ENGINEERING & DESIGN
         </h2>
 
@@ -314,9 +330,9 @@
         <div class="row px-2" style="height: auto;">
             <div class="col-md-6 mb-3">
                 <div class=" d-flex flex-column justify-content-start align-items-center text-center p-4" 
-                    style="height: 100%; font-family: 'Bricolage Grotesque', sans-serif; font-size: 19pt;background: linear-gradient(360deg,rgb(188, 188, 188),rgba(255, 255, 255, 0) 70%);">
+                    style="height: 100%; font-family: 'Bricolage Grotesque', sans-serif;background: linear-gradient(360deg,rgb(188, 188, 188),rgba(255, 255, 255, 0) 70%);">
                     
-                    <h2 class="fw-bolder mb-4" style="color: rgb(228, 51, 51);font-size: 27pt;">Congress Calendar</h2>
+                    <h2 class="fw-bolder mb-4" style="color: rgb(228, 51, 51);">Congress Calendar</h2>
 
                     <ul class="list-unstyled w-100 m-0 custom-list">
                         <li class=" position-relative m-0">Abstract Submission Deadline: <span style="color: rgb(31,92,172);" class="fw-bold">October, 2026</span></li>
@@ -331,16 +347,16 @@
 
             <div class="col-md-6 mb-3">
                 <div class=" d-flex flex-column justify-content-start align-items-center text-center p-4" 
-                    style="min-height: 40rem; font-family: 'Bricolage Grotesque', sans-serif; font-size: 19pt;background: linear-gradient(180deg,rgb(188, 188, 188),rgba(255, 255, 255, 0) 70%);">
+                    style="height: auto; font-family: 'Bricolage Grotesque', sans-serif; background: linear-gradient(180deg,rgb(188, 188, 188),rgba(255, 255, 255, 0) 70%);">
                     
-                    <h2 class="fw-bolder mb-4" style="color: rgb(228, 51, 51);font-size: 27pt;">Congress Fee</h2>
+                    <h2 class="fw-bolder mb-4" style="color: rgb(228, 51, 51);">Congress Fee</h2>
                     
                     <ul class="list-unstyled w-100 custom-list">
-                        <p class="fw-bold m-0" style="color: rgb(31, 92, 172);font-size: 22pt;">Services Included in the Fee</p>
+                        <p class="fw-bold m-0" style="color: rgb(31, 92, 172);">Services Included in the Fee</p>
                         <li class="m-0">Publication of abstracts and full texts in the congress book with ISBN</li>
                         <li class="m-0">Separate participation certificate for all authors</li>
                         <li class="m-0 mb-4">Coffee break for in person participants</li>
-                        <p class="fw-bold m-0" style="color: rgb(31, 92, 172);font-size: 22pt;">Accreditation</p>
+                        <p class="fw-bold m-0" style="color: rgb(31, 92, 172);">Accreditation</p>
                         <li class="m-0">Internationally accredited</li>
                         <li class="m-0">Online participation fee is</li>
                         <p class="m-0">50 EUROS: <span style="color: rgb(31, 92, 172);">ATED@stu.edu.vn</span></p>
@@ -358,8 +374,8 @@
 
     <div style=" background: linear-gradient(360deg,rgb(188, 188, 188),rgba(255, 255, 255, 0) 30%);"
     class="container-fluid mt-4 pb-4 d-flex flex-column justify-content-center align-items-center ">
-        <h2 style="color: rgb(228, 51, 51); font-size: 27pt;" class="fw-bold mb-4">Application & Submission Steps</h2>
-        <ul class="list-unstyled d-flex flex-column justify-content-center align-items-start" style="width: 73%; font-family: 'Bricolage Grotesque', sans-serif; font-size: 19pt;">
+        <h2 style="color: rgb(228, 51, 51);" class="fw-bold mb-4">Application & Submission Steps</h2>
+        <ul class="list-unstyled d-flex flex-column justify-content-center align-items-start" style="width: 73%; font-family: 'Bricolage Grotesque', sans-serif;">
             <li>1- Submit your abstract via email to <span style="color: rgb(31, 92, 172);">ATED@stu.edu.vn</span> <span style="color: rgb(228, 51, 51);">by Octorber, 2026 as word (not pdf)</span></li>
             <li>2- Referee process <span style="color: rgb(228, 51, 51);">takes about 3 days.</span> If your abstract is accepted by referees, we send you <span style="color: rgb(228, 51, 51);">an acceptance mail within 3 days</span></li>
             <li>3- After receiving the acceptance mail make your payment vie credit card and send a copy of the payment screenshot via email to us</li>
@@ -372,14 +388,14 @@
     <!-- guide -->
     <div class="container-fluid d-flex flex-column justify-content-center align-items-center position-relative text-white text-center py-4" 
         style="height: auto; background-color: rgb(31, 92, 172);">
-        <h1 class="fw-bolder m-0 " 
-            style="font-family: 'Bricolage Grotesque', sans-serif; font-size: 80pt; bottom: 51%;">
+        <h1 class="fw-bolder m-0 main-h1" 
+            style="font-family: 'Bricolage Grotesque', sans-serif;  bottom: 51%;">
             WRITING GUIDE
         </h1>
     </div>
 
     <div class="container-fluid mt-4 d-flex flex-column justify-content-center align-items-center text-center"
-    style="font-size: 20pt;font-family: 'Bricolage Grotesque', sans-serif;">
+    style="font-family: 'Bricolage Grotesque', sans-serif;">
         <p class="mt-4 mb-4" style="width: 85%;">You must apply to the Congress by sending an abstract. Since our congress has an INTERNATIONAL character, it is obligatory to send an abstract in English. The summary evaluation process takes a maximum of 5 days. The author is informed about the result of the evaluation without delay.</p>
         
         <div class="d-flex flex-column justify-content-center align-items-center text-center mb-4" 
