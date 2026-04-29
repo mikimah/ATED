@@ -103,18 +103,18 @@
     }
 
       .custom-list {
-        list-style: none; /* Tắt bullet mặc định */
+        list-style: none; 
         padding-left: 0;
       }
 
       .custom-list li {
         position: relative;
-        padding-left: 1.5rem; /* Tạo khoảng trống cho bullet */
+        padding-left: 1.5rem; 
         margin-bottom: 0.5rem;
       }
 
       .custom-list li::before {
-        content: "-"; /* Bạn có thể đổi thành "•", "→", hoặc icon */
+        content: "-"; 
         position: absolute;
         left: 0;
         color: rgb(31, 92, 172);
@@ -172,7 +172,8 @@
               <a
                 class="nav-link fw-bold"
                 style="color: rgb(31, 92, 172)"
-                href="#contacts-section"
+                href="javascript:void(0)"
+                onclick="scrollToSection('contacts-section')"
                 >Contact</a
               >
             </li>
@@ -785,6 +786,19 @@
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
       crossorigin="anonymous"
     ></script>
+
+    <script>
+      if (history.scrollRestoration) {
+          history.scrollRestoration = 'manual';
+      }
+      function scrollToSection(id) {
+          const element = document.getElementById(id);
+          if (element) {
+              element.scrollIntoView({ behavior: 'smooth' });
+              window.history.replaceState(null, null, window.location.pathname);
+          }
+      }
+    </script>
   </body>
 
 
