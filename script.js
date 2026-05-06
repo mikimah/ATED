@@ -20,7 +20,7 @@ function scrollToSection(id) {
      
 window.addEventListener('scroll', function() {
   if (window.scrollY > 300) {
-    goToTopBtn.style.display = 'block';
+    goToTopBtn.style.display = 'flex';
     } else {
     goToTopBtn.style.display = 'none';
     }
@@ -28,7 +28,7 @@ window.addEventListener('scroll', function() {
 
 if (performance.getEntriesByType("navigation")[0].type === "reload") {
   if (window.scrollY > 300) {
-    goToTopBtn.style.display = 'block';
+    goToTopBtn.style.display = 'flex';
     } else {
     goToTopBtn.style.display = 'none';
     }
